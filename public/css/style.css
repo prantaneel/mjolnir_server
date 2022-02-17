@@ -297,7 +297,7 @@ section {
 }
 
 #banner #logo h1 {
-    font-size: 28px;
+    font-size: 22px;
     margin-right: 10px;
     font-weight: 900;
     padding: 0;
@@ -388,7 +388,6 @@ section {
 .play-icon:before {
     font-family: 'fontawesome';
     content: '\f144';
-    speak: none;
     font-size: 74px;
     line-height: 110px;
     font-style: normal;
@@ -662,7 +661,7 @@ a img {
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    -webkit-backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
 }
 
 a img:hover {
@@ -714,8 +713,7 @@ h6 {
 /* Section Headings */
 
 .section-heading {
-    margin: 5px;
-    width: 600px;
+
     padding: 0 0 15px 0;
 }
 .section-subtitle {
@@ -723,16 +721,7 @@ h6 {
     font-size: 18px;
     padding-top: 0;
 }
-.code-container{
-    width: 1200px;
-    display: flex;
-    flex-direction: row;
-}
-#code-output{
-    width: 600px;
-    height: 300px;
-    resize: none;
-}
+
 .section-heading h3 {
     font-size: 14px;
     font-weight: bold;
@@ -957,7 +946,7 @@ blockquote {
 
 #gallery a:hover img {
     opacity: 0.15;
-    -moz-backface-visibility: hidden;
+    /* -moz-backface-visibility: hidden; */
 }
 
 #gallery a:before {
@@ -979,7 +968,7 @@ blockquote {
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
     transition: all .2s linear;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 #gallery a:hover:before {
@@ -1363,8 +1352,7 @@ blockquote {
 .client-overlay {
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
-    top;
-    0;
+    top:0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -2146,11 +2134,11 @@ blockquote {
 
     /*-----------------Typography-----------------*/
     h1 {
-        font-size: 38px;
+        font-size: 28px;
     }
 
     #banner h1 {
-        font-size: 48px;
+        font-size: 38px;
     }
 
     /* Hide Elements */
