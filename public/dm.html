@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>readme</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images/favicon.ico" title="Favicon"/>
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/color.css">
+
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="./css/github.css">
+
+
+</head>
+<body>
+  <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+    <div id="header" class="nav-collapse">
+        <div class="row clearfix">
+            <div class="col-1">
+
+                <!--Logo-->
+                <div id="logo">
+
+                    <!--Logo that is shown on the banner-->
+                    <h1 class="logo-text">Mjolnir</h1>
+                    <!--End of Banner Logo-->
+
+                </div>
+                <!--End of Logo-->
+
+                <aside>
+
+                    <!--Social Icons in Header-->
+                    <ul class="social-icons">
+                        <li>
+                            <a target="_blank" title="Github" href="https://github.com/soulado/mjolnir_prod">
+                                <i class="fa fa-github fa-2x"></i><span>Github</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--End of Social Icons in Header-->
+
+                </aside>
+
+                <!--Main Navigation-->
+                <nav id="nav-main">
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/documentation">Documentation</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--End of Main Navigation-->
+
+                <div id="nav-trigger"><span></span></div>
+                <nav id="nav-mobile"></nav>
+
+            </div>
+        </div>
+    </div><!--End of Header-->
+</header>
+<div id='content'>
+    <h1 id="mjolnir">Mjolnir</h1>
+<p>Mjolnir is a simple, lightweight programming language. It follows <strong>ENBF grammar</strong> and the interpreter is completely written in javascript. Although its easy to read, its a strongly typed language and supports inline functions as well as recursion blocks.</p>
+<h3 id="important">IMPORTANT!!</h3>
+<ul>
+<li>No support for boolean has been added. Boolean is internally converted to <strong>number</strong>.</li>
+<li>Due to small stack size, limited number of recursive calls can be made.</li>
+</ul>
+<h2 id="grammar">Grammar</h2>
+<pre><code>1. [] =&gt; optional 0/1
+2. {} =&gt; occurs 0-n times
+3. program::= variable-declaration | conditional | loop | expression [program]
+4. variable-declaration::= variable-keyword variable-name assignment-operator variable-body
+5. variable-keyword::= “func” | “num” | “arr”  | “bool” | “str”
+6. variable-name::= identifier
+7. assignment-operator::= “=”
+8. variable-body::= function-declaration | expression | comparison
+9. function-declaration::= function-arguments wrapper function-block wrapper
+10. function-arguments::= “(“ [{ variable-keyword variable-name “,” }] “)”
+11. array::= “[“ [{expression “,”}] “]” 
+12. function-block::= program
+13. conditional::= “if”comparison wrapper program wrapper  [{“else if”...} | “else” wrapper program wrapper]
+14. comparison::= expression [comparison-operator expression]
+15. comparison-operator::= “==”
+16. expression::= term {“+” | “-” }[expression]
+17. term::= factor {“*” | “/” | “%”}[term]
+18. factor::= string | number | array | boolean | identifier | “-” factor | “(“ expression “)” | function-call
+
+19. function-call::= identifier “(“ [ {expression “,”} ] “)”
+
+23. identifier::= {char}
+24. number::= {digit} [“.” {digit}]
+25. string::= `”[{*}]”`
+26. boolean::= “true” | “false”
+27. char::= “a” | “b” |...”Y” | “Z”
+28. digit::= “1” | “2” | “3” |...| ”9” | “0”
+29. wrapper::= “&lt;&lt;” | “&gt;&gt;”
+</code></pre>
+
+        </div>
+        <footer id="landing-footer" class="clearfix">
+          <div class="row clearfix">
+              <p id="copyright" class="col-2">Mjolnir</p>
+          </div>
+      </footer>
+        <script src="js/jquery.1.8.3.min.js"></script>
+<!-- <script src="js/wow.min.js"></script>
+<script src="js/featherlight.min.js"></script>
+<script src="js/featherlight.gallery.min.js"></script>
+<script src="js/jquery.enllax.min.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.stickyNavbar.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/images-loaded.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/site.js"></script> -->
+    </body>
+</html>
