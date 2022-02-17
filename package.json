@@ -5,14 +5,21 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soulado/mjolnir_server.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soulado/mjolnir_server/issues"
+  },
+  "homepage": "https://github.com/soulado/mjolnir_server#readme",
   "dependencies": {
-    "express": "^4.17.3",
-    "path": "^0.12.7"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
